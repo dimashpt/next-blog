@@ -6,6 +6,7 @@ import { Button } from '@/components/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/sheet';
 
 import { NextPage } from 'next';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const RootTemplate: NextPage = ({ children }: React.PropsWithChildren) => {
   return (
@@ -38,6 +39,9 @@ const RootTemplate: NextPage = ({ children }: React.PropsWithChildren) => {
             Articles (CSR)
           </Link>
         </nav>
+        <div className="ml-auto">
+          <ThemeToggle />
+        </div>
         <Sheet>
           <SheetTrigger asChild>
             <Button
