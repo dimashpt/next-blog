@@ -9,7 +9,13 @@
     "plugin:sonarjs/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "unused-imports", "sonarjs", "react-refresh"],
+  "plugins": [
+    "@typescript-eslint",
+    "unused-imports",
+    "sonarjs",
+    "react-refresh",
+    "@tanstack/query"
+  ],
   "rules": {
     "quotes": ["error", "single"],
     "@typescript-eslint/no-require-imports": "off",

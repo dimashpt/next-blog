@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/helpers/utils';
 import { ThemeProvider } from '@/components/theme-provider';
+import QueryProvider from '@/helpers/query-provider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,7 +36,7 @@ const RootLayout: NextPage<RootLayoutProps> = ({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <QueryProvider>{children}</QueryProvider>
         </ThemeProvider>
       </body>
     </html>

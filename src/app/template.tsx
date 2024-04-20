@@ -27,16 +27,16 @@ const RootTemplate: NextPage = ({ children }: React.PropsWithChildren) => {
             Dashboard
           </Link>
           <Link
-            href="/articles/ssr"
+            href="/posts/ssr"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Articles (SSR)
+            Posts (SSR)
           </Link>
           <Link
-            href="/articles/csr"
+            href="/posts/csr"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Articles (CSR)
+            Posts (CSR)
           </Link>
         </nav>
         <div className="ml-auto">
@@ -66,16 +66,16 @@ const RootTemplate: NextPage = ({ children }: React.PropsWithChildren) => {
                 Dashboard
               </Link>
               <Link
-                href="/articles/ssr"
+                href="/posts/ssr"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Articles (SSR)
+                Posts (SSR)
               </Link>
               <Link
-                href="/articles/csr"
+                href="/posts/csr"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Articles (CSR)
+                Posts (CSR)
               </Link>
             </nav>
           </SheetContent>
